@@ -25,7 +25,7 @@ function Navbar () {
                                 <Link to={"/"} className="navlink" target="_blank">Ana Səhifə</Link>
                             </button>
                             <button className="navbtn">
-                                <Link to={"/haqqımızda"} className="navlink" target="_blank">Haqqımızda</Link>
+                                <Link to={"/haqqımızda"} className="navlink">Haqqımızda</Link>
                             </button>
                             <button className="navbtn">
                                 <Link to={'/xidmətlərimiz'} className="navlink" target="_blank">Xidmətlər</Link>

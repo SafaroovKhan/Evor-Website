@@ -11,7 +11,7 @@ function DecorNav () {
                         <img src={img08} alt="Evor Logo" className="navimg" />
                     </div>
                     <div className="decornav-text">
-                        <h1 className="decornav-brand">Dekoralar</h1>
+                        <h1 className="decornav-brand">Dekorlar</h1>
                     </div>
                     <div className="decornav-btns">
                         <button className="decornav-btn">

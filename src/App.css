@@ -1571,3 +1571,563 @@ body::-webkit-scrollbar{
     font-weight: 500;
 
 }
+
+
+/* Media Queries */
+@media (max-width: 1277px) {
+
+    /* Main Page */
+        /* Navigation Bar */
+        .navlink:link,
+        .navlink:visited{
+            font-family: 'Wix Madefor Text', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: #47372d;
+            text-decoration: none;
+        }
+        .navlinks{
+            padding: 0 15rem 1rem 15rem;
+        }
+}
+@media (max-width: 1161px) {
+    /* Main Page */
+        /* Navigation Bar */
+        .navlink:link,
+        .navlink:visited{
+            font-family: 'Wix Madefor Text', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: #47372d;
+            text-decoration: none;
+        }
+        .navlinks{
+            padding: 0 10rem 1rem 10rem;
+        }
+
+}
+@media (max-width: 1103px) {
+    /* Main Paga */
+        /* Main Part */
+        .mainpart-section::after{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 80rem;
+            position: absolute;
+            top: -6rem;
+            left: 0rem;
+            z-index: 99999;
+        
+        }
+        .mainpart-section::before{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 90rem;
+            position: absolute;
+            top: -5.5rem;
+            left: 0rem;
+            z-index: 99999;
+        
+        }
+        .mainpart-top{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6rem;
+        }
+        .imgslider-box{
+            background-color: transparent;
+            width: 26rem;
+            height: 30rem;
+            border-radius: 15px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        .imgslider-box-big{
+            width: 30rem;
+            height: 32rem;
+        }
+        .mainpart-bottom-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+        }
+        /* Footer */
+        .footer-section::after{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 80rem;
+            position: absolute;
+            top: -2rem;
+            left: 0rem;
+            z-index: 99999;
+        }
+        .footer-section::before{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 90rem;
+            position: absolute;
+            top: -2.5rem;
+            left: 0rem;
+            z-index: 99999;
+        }
+        .help-link:link,
+        .help-link:visited{
+            font-size: 1.6rem;
+        }
+        .help-header{
+            font-size: 2.2rem;
+        }
+        .campains-header{
+            font-size: 2.2rem;
+        }
+        .page-link:link,
+        .page-link:visited{
+            font-size: 1.6rem;
+        }
+        .pages-header{
+            font-size: 2.2rem;
+        }
+        .contact-btn{
+            font-size: 1.8rem;
+        }
+        .footer-container{
+            width: 90rem;
+        }
+}
+@media (max-width: 995px) {
+    /* Main Page */
+        /* Nav Bar  */
+        .navlink:link,
+        .navlink:visited{
+            font-size: 1.6rem;
+        }
+        .navlinks{
+            padding: 0 8rem 1rem 8rem ;
+        }
+        .navicon{
+            font-size: 2.4rem;
+        }
+        .navicons{
+            gap: 0.5rem;
+        }
+        .navimg{
+            width: 9rem;
+            height: 9rem;
+        }
+        .navbar-txt{
+            font-size: 1.2rem;
+        }
+
+        /* Main Part */
+        .mainpart-bottom-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .mainpart-section::after{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 60rem;
+            position: absolute;
+            top: -6rem;
+            left: 0rem;
+            z-index: 99999;
+        
+        }
+        .mainpart-section::before{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 70rem;
+            position: absolute;
+            top: -5.5rem;
+            left: 0rem;
+            z-index: 99999;
+        }
+        .mainpart-btn-link{
+            font-size: 2.2rem;
+        }
+        .mainpart-btn{
+            font-size: 2.2rem;
+        }
+        .mainbtn-img1{
+            width: 22rem;
+            height: 11rem;
+            top: -4.2rem;
+            left: -4.6rem;
+        }
+        .mainbtn-img2{
+            width: 24rem;
+            height: 12rem;
+            top: -4.4rem;
+            right: -2.9rem;
+        }
+        .mainpart-btn-box{
+            width: 26rem;
+            height: 13rem;
+        }
+        /* Footer */
+        .footer-section::after{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 60rem;
+            position: absolute;
+            top: -2rem;
+            left: 0rem;
+            z-index: 99999;
+        }
+        .footer-section::before{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 70rem;
+            position: absolute;
+            top: -2.5rem;
+            left: 0rem;
+            z-index: 99999;
+        }
+        .help-link:link,
+        .help-link:visited{
+            font-size: 1rem;
+        }
+        .help-header{
+            font-size: 1.8rem;
+        }
+        .campains-header{
+            font-size: 1.8rem;
+        }
+        .page-link:link,
+        .page-link:visited{
+            font-size: 1rem;
+        }
+        .pages-header{
+            font-size: 1.8rem;
+        }
+        .contact-btn{
+            font-size: 1.4rem;
+        }
+        .contact-social:link,
+        .contact-social:visited{
+            font-size: 1.8rem;
+            color: #dfd3c3;
+            margin-left: 0.56rem;
+        }
+        .footer-container{
+            width: 80rem;
+        }
+}
+@media (max-width: 903px) {
+    /* Main Page */
+        /* Nav Bar  */
+        .navlink:link,
+        .navlink:visited{
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .navlinks{
+            padding: 0 6rem 1rem 6rem ;
+        }
+        .navicon{
+            font-size: 2rem;
+        }
+        .navicons{
+            gap: 0.5rem;
+        }
+        .navimg{
+            width: 7rem;
+            height: 7rem;
+        }
+        .navbar-txt{
+            font-size: 1.2rem;
+        }
+        /* Main Part */
+        .imgslider-box{
+            background-color: transparent;
+            width: 20rem;
+            height: 24rem;
+            border-radius: 15px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        .imgslider-box-big{
+            width: 24rem;
+            height: 28rem;
+        }
+        .mainpart-bottom-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+        }
+        .mainpart-section::after{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 40rem;
+            position: absolute;
+            top: -6rem;
+            left: 0rem;
+            z-index: 99999;
+        
+        }
+        .mainpart-section::before{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 50rem;
+            position: absolute;
+            top: -5.5rem;
+            left: 0rem;
+            z-index: 99999;
+        }
+        .mainpart-btn-link{
+            font-size: 1.8rem;
+        }
+        .mainpart-btn{
+            font-size: 1.8rem;
+        }
+        .mainbtn-img1{
+            width: 20rem;
+            height: 10rem;
+            top: -3.7rem;
+            left: -4.4rem;
+        }
+        .mainbtn-img2{
+            width: 22rem;
+            height: 11rem;
+            top: -4.2rem;
+            right: -3.4rem;
+        }
+        .mainpart-btn-box{
+            width: 24rem;
+            height: 12rem;
+        }
+        .mainimg{
+            width: 11rem;
+            height: 11rem;
+        }
+        /* Footer */
+        .footer-section::after{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 40rem;
+            position: absolute;
+            top: -2rem;
+            left: 0rem;
+            z-index: 99999;
+        }
+        .footer-section::before{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 50rem;
+            position: absolute;
+            top: -2.5rem;
+            left: 0rem;
+            z-index: 99999;
+        }
+        .footer-section{
+            width: 100%;
+            height: 40vh;
+            background-color: #47372d;
+            margin-top: 5rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer-container{
+            width: 70rem;
+        }
+}
+@media (max-width: 760px) {
+    /* Main Page */
+        /* Nav Bar  */
+        .navlink:link,
+        .navlink:visited{
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .navlinks{
+            padding: 0 4rem 1rem 4rem ;
+            gap: 2rem;
+        }
+        .navicon{
+            font-size: 1.8rem;
+        }
+        .navicons{
+            gap: 0.5rem;
+        }
+        .navimg{
+            width: 7rem;
+            height: 7rem;
+        }
+        .navbar-txt{
+            font-size: 1.2rem;
+        }
+        /* Header Section */
+        .header-section{
+            height: 80vh;
+        }
+        .header-img{
+            height: 80vh;
+        }
+        /* Main Part */
+        .imgslider-box{
+            background-color: transparent;
+            width: 16rem;
+            height: 18rem;
+            border-radius: 15px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        .imgslider-box-big{
+            width: 20rem;
+            height: 22rem;
+        }
+        .mainpart-bottom-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .mainpart-section::after{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 30rem;
+            position: absolute;
+            top: -6rem;
+            left: 0rem;
+            z-index: 99999;
+        
+        }
+        .mainpart-section::before{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 40rem;
+            position: absolute;
+            top: -5.5rem;
+            left: 0rem;
+            z-index: 99999;
+        }
+        .mainpart-container{
+            gap: 0;
+        }
+        .mainpart-section{
+            height: 90vh;
+        }
+        .mainpart-btn-link{
+            font-size: 1.8rem;
+        }
+        .mainpart-btn{
+            font-size: 1.8rem;
+        }
+        .mainbtn-img1{
+            width: 20rem;
+            height: 10rem;
+            top: -3.7rem;
+            left: -4.4rem;
+        }
+        .mainbtn-img2{
+            width: 22rem;
+            height: 11rem;
+            top: -4.2rem;
+            right: -3.4rem;
+        }
+        .mainpart-top{
+            gap: 1rem;
+        }
+        .mainpart-btn-box{
+            width: 24rem;
+            height: 12rem;
+        }
+        .mainimg{
+            width: 11rem;
+            height: 11rem;
+        }
+         /* Footer */
+         .footer-section::after{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 40rem;
+            position: absolute;
+            top: -2rem;
+            left: 0rem;
+            z-index: 99999;
+        }
+        .footer-section::before{
+            content: "test";
+            color: transparent;
+            border-bottom: 2px solid #47372d;
+            width: 50rem;
+            position: absolute;
+            top: -2.5rem;
+            left: 0rem;
+            z-index: 99999;
+        }
+        .footer-section{
+            width: 100%;
+            height: 40vh;
+            background-color: #47372d;
+            margin-top: 5rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .help-link:link,
+        .help-link:visited{
+            font-size: 0.8rem;
+        }
+        .help-header{
+            font-size: 1.6rem;
+        }
+        .campains-header{
+            font-size: 1.6rem;
+        }
+        .page-link:link,
+        .page-link:visited{
+            font-size: 0.8rem;
+        }
+        .pages-header{
+            font-size: 1.6rem;
+        }
+        .contact-btn{
+            font-size: 1rem;
+        }
+        .contact-social:link,
+        .contact-social:visited{
+            font-size: 1.2rem;
+            color: #dfd3c3;
+            margin-left: 0.56rem;
+        }
+        .contact-header{
+            font-size: 1.6rem;
+        }
+        .footer-container{
+            width: 60rem;
+        }
+}
+@media (max-width: 665px) {
+    
+}
