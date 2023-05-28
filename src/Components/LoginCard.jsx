@@ -6,8 +6,8 @@ function LoginCard () {
             <div className="logincard">
                 <div className="logincard-container">
                     <div className="login-links">
-                        <Link to={"/daxilol"} className="login-link" target="_blank">Daxil Ol</Link>
-                        <Link to={"üzvol"} className="login-link signup-link" target="_blank">Üzv Ol</Link>
+                        <Link to={"/daxilol"} className="login-link" >Daxil Ol</Link>
+                        <Link to={"üzvol"} className="login-link signup-link" >Üzv Ol</Link>
                     </div>
                 </div>
             </div>
