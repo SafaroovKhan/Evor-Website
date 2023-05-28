@@ -52,7 +52,7 @@ function MainPart() {
             <div className="mainpart-btn-box">
                 <button className="mainpart-btn" >
                   <div className='btn-div'>
-                      <Link to={'/decorlar'} className='mainpart-btn-link' target='_blank'>DEKOR SEÇ</Link> 
+                      <Link to={'/decorlar'} className='mainpart-btn-link' >DEKOR SEÇ</Link> 
                     <img src={img10} className='mainbtn-img1' />
                   </div>
                 </button>
