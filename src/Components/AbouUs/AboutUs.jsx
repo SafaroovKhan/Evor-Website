@@ -16,11 +16,11 @@ export default function AboutUs () {
                 <div className="login-navbar">
                     <div className="login-navbar-container">
                         <div className="login-nav-btns">
-                            <button className="login-nav-btn"><Link to={"/"} className="navlink" target="_blank">Ana Səhifə</Link></button>
-                            <button className="login-nav-btn"><Link to={"/haqqımızda"} className="navlink" target="_blank">Haqqımızda</Link></button>
-                            <button className="login-nav-btn"><Link to={"/xidmətlərimiz"} className="navlink" target="_blank">Xidmətlər</Link></button>
-                            <button className="login-nav-btn"><Link to={"/"} className="navlink" target="_blank">Bloq</Link></button>
-                            <button className="login-nav-btn"><Link to={"/"} className="navlink" target="_blank">Əlaqə</Link></button>
+                            <button className="login-nav-btn"><Link to={"/"} className="navlink" >Ana Səhifə</Link></button>
+                            <button className="login-nav-btn"><Link to={"/haqqımızda"} className="navlink" >Haqqımızda</Link></button>
+                            <button className="login-nav-btn"><Link to={"/xidmətlərimiz"} className="navlink" >Xidmətlər</Link></button>
+                            <button className="login-nav-btn"><Link to={"/"} className="navlink" >Bloq</Link></button>
+                            <button className="login-nav-btn"><Link to={"/"} className="navlink" >Əlaqə</Link></button>
                         </div>
                         <div className="login-nav-icons">
                             <button className="login-nav-icon"><i class="fa-regular fa-user  "></i></button>

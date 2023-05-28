@@ -22,19 +22,19 @@ function Navbar () {
                         <img src={img08} alt="Evor Logo" className="navimg" />
                         <div className="navlinks">
                             <button className="navbtn">
-                                <Link to={"/"} className="navlink" target="_blank">Ana Səhifə</Link>
+                                <Link to={"/"} className="navlink" >Ana Səhifə</Link>
                             </button>
                             <button className="navbtn">
                                 <Link to={"/haqqımızda"} className="navlink">Haqqımızda</Link>
                             </button>
                             <button className="navbtn">
-                                <Link to={'/xidmətlərimiz'} className="navlink" target="_blank">Xidmətlər</Link>
+                                <Link to={'/xidmətlərimiz'} className="navlink" >Xidmətlər</Link>
                             </button>
                             <button className="navbtn">
-                                <Link to={"/"} className="navlink" target="_blank">Bloq</Link>
+                                <Link to={"/"} className="navlink" >Bloq</Link>
                             </button>
                             <button className="navbtn">
-                                <Link to={"/"} className="navlink" target="_blank">Əlaqə</Link>
+                                <Link to={"/"} className="navlink" >Əlaqə</Link>
                             </button>
                         </div>
                         <div className="navicons">
