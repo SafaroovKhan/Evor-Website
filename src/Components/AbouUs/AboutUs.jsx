@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import LoginCard from "../LoginCard";
 import Footer from "../MainPage/Footer"
 import aboutusbackground from "./aboutusimgs/aboutusbackground.png"
 import aboutuspattern from "./aboutusimgs/aboutuspattern.png"
@@ -10,6 +12,13 @@ import memberimg05 from "./aboutusimgs/uss5croped.png"
 import memberimg06 from "./aboutusimgs/uss6croped.png"
 
 export default function AboutUs () {
+    const [showLoginCard, setShowLoginCard] = useState(false); 
+
+    const handleLoginCard = () => {
+        setShowLoginCard(!showLoginCard);
+    }
+
+
     return(
         <>
             <div className="aboutus-header">
@@ -23,7 +32,12 @@ export default function AboutUs () {
                             <button className="login-nav-btn"><Link to={"/"} className="navlink" >Əlaqə</Link></button>
                         </div>
                         <div className="login-nav-icons">
-                            <button className="login-nav-icon"><i class="fa-regular fa-user  "></i></button>
+                            <div>
+                                <button className="login-nav-icon" onClick={handleLoginCard}>
+                                    <i class="fa-regular fa-user navicon "></i>
+                                </button>
+                                {showLoginCard && <LoginCard/>}
+                            </div>
                             <button className="login-nav-icon"><i class="fa-regular fa-heart "></i></button>
                             <button className="login-nav-icon"><i class="fa-solid fa-cart-shopping "></i></button>
                         </div>

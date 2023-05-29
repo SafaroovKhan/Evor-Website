@@ -1,27 +1,30 @@
-import {useState} from "react"
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import DecorNav from "./DecorNav";
-import DecorFilterNav from "./DecorFilterNav";
-import DecorWindow from "./DecorWindow";
-import DecorFilterCard from "./DecorFilterCard";
-function Decors () {
+import DiyFilterCard from "./diyfiltercard";
+import DiyFilterNav from "./diyfilternav";
+import DiyNav from "./diynav";
+import DiyWindow from "./diywindow";
 
-    const [showDecorFilterCard, setShowDecorFilterCard] = useState(false);
+export default function DIY () {
+
+    const [showDiyFilterCard, setShowDiyFilterCard] = useState(false);
 
     const handleFilterCard = () => {
-        setShowDecorFilterCard(!showDecorFilterCard)
+        setShowDiyFilterCard(!showDiyFilterCard)
     }
+
+
     return (
         <>
-            <DecorNav/>
-            <DecorFilterNav/>
-            <DecorWindow/>
+            <DiyNav/>
+            <DiyFilterNav/>
+            <DiyWindow/>
 
             <div className="decorsidebar">
                 <div className="decorsiderbar-container">
                     <div>
                         <button className="sidebar-btn" onClick={handleFilterCard}><i class="fa-solid fa-sliders"></i></button>
-                        {showDecorFilterCard && <DecorFilterCard/>}
+                        {showDiyFilterCard && <DiyFilterCard/>}
                     </div>
                     <button className="sidebar-btn"><Link to={'/'} className="navlink"><i class="fa-solid fa-house"></i></Link></button>
                     <button className="sidebar-btn"><i class="fa-solid fa-tag"></i></button>
@@ -30,6 +33,4 @@ function Decors () {
             </div>
         </>
     );
-}
-
-export default Decors;
+} 

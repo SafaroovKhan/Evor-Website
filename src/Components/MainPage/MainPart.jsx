@@ -62,7 +62,7 @@ function MainPart() {
             <div className="mainpart-btn-box">
               <button className="mainpart-btn">
                 <div className="btn-div">
-                  ÖZÜN DİZAYN ET
+                  <Link to={"/özündizaynet"} className='mainpart-btn-link'> ÖZÜN DİZAYN ET </Link> 
                   <img src={img10} className='mainbtn-img2' />
                 </div>
               </button>

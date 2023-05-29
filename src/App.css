@@ -149,6 +149,7 @@ body::-webkit-scrollbar{
     position: absolute;
     top: 10rem;
     right: 15rem;
+    z-index: 99999999;
 }
 .logincard-container{
     padding: 2rem;

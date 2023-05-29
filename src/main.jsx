@@ -7,6 +7,7 @@ import LoginPage from './Components/LoginPage/Login.jsx'
 import SignUp from './Components/SignUpPage/SignUp.jsx'
 import OurServices from './Components/OurServices/OurServices.jsx'
 import AboutUs from './Components/AbouUs/AboutUs.jsx'
+import DIY from './Components/DIY/diy.jsx'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/haqqımızda",
     element: <AboutUs/>
+  },
+  {
+    path: "/özündizaynet",
+    element: <DIY/>
   }
 
 ])

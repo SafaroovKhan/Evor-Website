@@ -3,7 +3,7 @@ import LoginCard from "../LoginCard"
 import img08 from "../MainPage/assets/Evorlogo2.png"
 
 
-function DecorNav () {
+function DiyNav () {
     const [showLoginCard, setShowLoginCard] = useState(false); 
 
     const handleLoginCard = () => {
@@ -17,11 +17,11 @@ function DecorNav () {
                         <img src={img08} alt="Evor Logo" className="navimg" />
                     </div>
                     <div className="decornav-text">
-                        <h1 className="decornav-brand">Dekorlar</h1>
+                        <h1 className="decornav-brand">Özün dizayn et</h1>
                     </div>
                     <div className="decornav-btns">
                         <button className="decornav-btn">
-                            Özün Dizayn Et
+                            Dekorlar
                         </button>
                         <div>
                             <button className="decornav-icon" onClick={handleLoginCard}><i class="fa-regular fa-user  navicon"></i></button>
@@ -35,4 +35,4 @@ function DecorNav () {
         </>
     );
 }
-export default DecorNav;
+export default DiyNav;
