@@ -42,25 +42,25 @@ export default function SignUp () {
                     <div className="signpage-header-box">
                         <h1 className="signuppage-header">Üzv Ol</h1>
                     </div>
-                    <form action="">
-                        <div className="signup-form-box">
+                    <form action="" netlify>
+                        <div className="signup-form-box" >
                             <label htmlFor="">Ad, Soyad</label>
                             <input type="text"  className="signpage-input"/>
                         </div>
                     </form>
-                    <form action="">
+                    <form action="" netlify>
                         <div className="signup-form-box">
                             <label htmlFor="">E-Poçt</label>
                             <input type="text"  className="signpage-input"/>
                         </div>
                     </form>
-                    <form action="">
+                    <form action="" netlify>
                         <div className="signup-form-box">
                             <label htmlFor="">Telefon nömrəsi</label>
                             <input type="text"  className="signpage-input"/>
                         </div>
                     </form>
-                    <form action="">
+                    <form action="" netlify>
                         <div className="signup-form-box">
                             <label htmlFor="">Şifrə</label>
                             <input type="text" placeholder="6+ simvol" className="signpage-input"/>
@@ -75,7 +75,7 @@ export default function SignUp () {
                         </div>
                     </div>
                     <div className="loginbtns">
-                        <button className="loginbtn-signuppage">Üzv Ol</button>
+                        <button className="loginbtn-signuppage" type="submit">Üzv Ol</button>
                         <button className="signbtn">Daxil Ol</button>
                     </div>
                     <div className="googlebtn-box">
