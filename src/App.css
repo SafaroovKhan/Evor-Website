@@ -46,6 +46,12 @@ body::-webkit-scrollbar{
     border: 1px solid #47372d;
     border-radius: 5px;
 }
+.navbar-navigation-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -2129,6 +2135,401 @@ body::-webkit-scrollbar{
             width: 60rem;
         }
 }
-@media (max-width: 665px) {
-    
+@media (max-width: 390px) {
+    /* Main Page */
+        /* Nav Bar  */
+        .navlink:link,
+        .navlink:visited{
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .navlinks{
+            padding: 0;
+            margin: 0;
+            gap: 0.2rem;
+        }
+        .navicon{
+            font-size: 1.5rem;
+        }
+        .navicons{
+            gap: 0.2rem;
+        }
+        .navimg{
+            width: 4rem;
+            height: 4rem;
+        }
+        .navbar-txt{
+            font-size: 1.2rem;
+        }
+        .navbar{
+            display: grid;
+            grid-template-columns: 1fr ;
+            row-gap: 0rem;
+            grid-template-rows: repeat(2, 1fr);
+            justify-items: start;
+            align-items: center;
+            width: 38rem;
+        }
+        .navbar-container{
+            height: 10rem;
+        }
+        .navbar-section{
+            height: 10rem;
+        }
+        /* Header Section */
+        .header-section{
+            height: 40vh;
+        }
+        .header-img{
+            height: 40vh;
+        }
+        /* Main Part */
+        .imgslider-box{
+            background-color: transparent;
+            width: 8rem;
+            height: 10rem;
+            border-radius: 15px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        .imgslider-box-big{
+            width: 10rem;
+            height: 12rem;
+        }
+        .mainpart-bottom-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .mainpart-section::after{
+            content: "test";
+            color: transparent;
+            border-bottom: 1px solid #47372d;
+            width: 15rem;
+            position: absolute;
+            top: -2rem;
+            left: 0rem;
+            z-index: 99999;
+        
+        }
+        .mainpart-section::before{
+            content: "test";
+            color: transparent;
+            border-bottom: 1px solid #47372d;
+            width: 30rem;
+            position: absolute;
+            top: -2.5rem;
+            left: 0rem;
+            z-index: 99999;
+        }
+        .mainpart-container{
+            gap: 0;
+        }
+        .mainpart-section{
+            height: 90vh;
+        }
+        .mainpart-btn-link{
+            font-size: 1.4rem;
+        }
+        .mainpart-btn{
+            font-size: 1.4rem;
+        }
+        .mainbtn-img1{
+            width: 12rem;
+            height: 6rem;
+            top: -1.9rem;
+            left: -2rem;
+        }
+        .mainbtn-img2{
+            width: 15rem;
+            height: 7rem;
+            top: -2.4rem;
+            right: -1.7rem;
+        }
+        .mainpart-top{
+            gap: 1rem;
+        }
+        .mainpart-btn-box{
+            width: 14rem;
+            height: 7rem;
+        }
+        .mainimg{
+            width: 7rem;
+            height: 7rem;
+        }
+        .mainpart-bottom-container{
+            height: 20vh;
+            gap: 1rem;
+        }
+        .mainpart-bottom{
+            height: 20vh;
+        }
+        .mainpart-section{
+            height: 32vh;
+            margin-top: 2rem;
+        }
+         /* Footer */
+         .footer-section::after{
+            content: "test";
+            color: transparent;
+            border-bottom: 1px solid #47372d;
+            width: 15rem;
+            position: absolute;
+            top: -2rem;
+            left: 0rem;
+            z-index: 99999;
+        }
+        .footer-section::before{
+            content: "test";
+            color: transparent;
+            border-bottom: 1px solid #47372d;
+            width: 30rem;
+            position: absolute;
+            top: -2.5rem;
+            left: 0rem;
+            z-index: 99999;
+        }
+        .footer-section{
+            width: 100%;
+            height: 40vh;
+            background-color: #47372d;
+            margin-top: 2rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .help-link:link,
+        .help-link:visited{
+            font-size: 0.8rem;
+        }
+        .help-header{
+            font-size: 1.2rem;
+        }
+        .campains-header{
+            font-size: 1.2rem;
+        }
+        .page-link:link,
+        .page-link:visited{
+            font-size: 0.8rem;
+        }
+        .pages-header{
+            font-size: 1.2rem;
+        }
+        .contact-btn{
+            font-size: 0.6rem;
+        }
+        .contact-social:link,
+        .contact-social:visited{
+            font-size: 1rem;
+            color: #dfd3c3;
+            margin-left: 0.56rem;
+        }
+        .contact-header{
+            font-size: 1.6rem;
+        }
+        .footer-container{
+            width: 35rem;
+            height: 20vh;
+        }
+        .footer-section{
+            height: 25vh;
+        }
+    /* About Us Page */
+        .aboutus-header{
+            height: 40vh;
+        }
+        .aboutus-background{
+            height: 40vh;
+        }
+        .login-navbar{
+            height: 15vh;
+        }
+        .login-nav-btns{
+            gap: 1rem;
+        }
+        .login-nav-btn{
+            font-size: 1rem;
+        }
+        .login-nav-icon{
+            font-size: 1.3rem;
+        }
+        .login-nav-icons{
+            gap: 0.1rem;
+        }
+        .login-navbar-container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 8.5fr 3.5fr;
+            grid-template-rows: 1fr;
+            align-items: center;
+            justify-items: end;
+            gap: 1.5rem;
+        }
+        .ouraim-txt{
+            font-size: 1.2rem;
+        }
+        .ouraim-header{
+            font-size: 3rem;
+        }
+        .ouraim{
+            width: 30rem;
+        }
+        .whoweare-txt{
+            font-size: 1.2rem;
+        }
+        .whoweare-header{
+            font-size: 3rem;
+        }
+        .whoweare{
+            width: 30rem;
+        }
+        .contentsection-pattern{
+            height: 60vh;
+        }
+        .contentsection-container{
+            width: 39rem;
+            height: 60vh;
+            gap: 3rem;
+        }
+        .aboutus-contentsection::after{
+            content: "";
+            border-bottom: 2px solid #47372d;
+            width: 30rem;
+            height: 1rem;
+            position: absolute;
+            top: 0rem;
+            left: 0rem;
+            position: absolute;
+        
+        }
+        .aboutus-contentsection::before{
+            content: "";
+            border-bottom: 2px solid #47372d;
+            width: 30rem;
+            height: 1rem;
+            position: absolute;
+            bottom: 0rem;
+            right: 0rem;
+            position: absolute;
+        }
+        .aboutus-contentsection{
+            height: 60vh;
+        }
+        .aboutus-team{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-bottom: 5rem;
+        }
+
+        .teamcontent-txt{
+            font-size: 1rem;
+        }
+        .teamcontent-header{
+            font-size: 1.4rem;
+        }
+        .teambox1, .teambox3, .teambox5 {
+            border-bottom: 1px solid #47372d;
+            padding-bottom: 0rem;
+        }
+        .teambox2, .teambox4, .teambox6 {
+            border-bottom: 1px solid #47372d;
+            padding-bottom: 0rem;
+        }
+        .teamcontent-box{
+            height: 10rem;
+        }
+        .teamimg-large{
+            width: 12rem;
+            height: 12rem;
+        }
+        .img-straight::after{
+            content: "";
+            border-left: 1px solid #47372d;
+            width: 1rem;
+            height: 8rem;
+            position: absolute;
+            top: 5rem;
+            left: 0rem;
+            position: absolute;
+        }
+        .img-straight::before{
+            content: "";
+            border-bottom: 1px solid #47372d;
+            width: 8rem;
+            height: 1rem;
+            position: absolute;
+            top: 10rem;
+            left: -1rem;
+            position: absolute;
+        }
+        .img-reverse::after{
+            content: "";
+            border-left: 1px solid #47372d;
+            width: 1rem;
+            height: 8rem;
+            position: absolute;
+            top: 4rem;
+            right: -1rem;
+            position: absolute;
+        }
+        .img-reverse::before{
+            content: "";
+            border-bottom: 1px solid #47372d;
+            width: 8rem;
+            height: 1rem;
+            position: absolute;
+            top: 10rem;
+            right: -1rem;
+            position: absolute;
+        }
+        .img-reverse-large::after{
+            content: "";
+            border-left: 1px solid #47372d;
+            width: 1rem;
+            height: 8rem;
+            position: absolute;
+            top: 4rem;
+            right: -0.8rem;
+            position: absolute;
+        }
+        .img-reverse-large::before{
+            content: "";
+            border-bottom: 1px solid #47372d;
+            width: 8rem;
+            height: 1rem;
+            position: absolute;
+            top: 10rem;
+            right: -1rem;
+            position: absolute;
+        }
+        .teamimg{
+            width: 10rem;
+            height: 10rem;
+        }
+        .teamrow-reverse{
+            width: 36rem;
+        }
+        .teamrow{
+            width: 36rem;
+        }
+        .team-container{
+            width: 36rem;
+        }
+        .aboutus-title{
+            font-size: 3rem;
+        }
+        .aboutus-team-container{
+            width: 38rem;
+        }
+        
+
+
 }

@@ -57,7 +57,6 @@ function MainPart() {
                   </div>
                 </button>
             </div>
-            
             <img src={img08} alt="evor logo" className='mainimg' />
             <div className="mainpart-btn-box">
               <button className="mainpart-btn">

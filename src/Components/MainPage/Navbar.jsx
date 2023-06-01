@@ -20,36 +20,38 @@ function Navbar () {
                     </div>
                     <nav className="navbar">
                         <img src={img08} alt="Evor Logo" className="navimg" />
-                        <div className="navlinks">
-                            <button className="navbtn">
-                                <Link to={"/"} className="navlink" >Ana Səhifə</Link>
-                            </button>
-                            <button className="navbtn">
-                                <Link to={"/haqqımızda"} className="navlink">Haqqımızda</Link>
-                            </button>
-                            <button className="navbtn">
-                                <Link to={'/xidmətlərimiz'} className="navlink" >Xidmətlər</Link>
-                            </button>
-                            <button className="navbtn">
-                                <Link to={"/"} className="navlink" >Bloq</Link>
-                            </button>
-                            <button className="navbtn">
-                                <Link to={"/"} className="navlink" >Əlaqə</Link>
-                            </button>
-                        </div>
-                        <div className="navicons">
-                            <div>
-                                <button className="navbtn" onClick={handleLoginCard}>
-                                    <i class="fa-regular fa-user  navicon"></i>
+                        <div className="navbar-navigation-bar">
+                            <div className="navlinks">
+                                <button className="navbtn">
+                                    <Link to={"/"} className="navlink" >Ana Səhifə</Link>
                                 </button>
-                                {showLoginCard && <LoginCard/>}
+                                <button className="navbtn">
+                                    <Link to={"/haqqımızda"} className="navlink">Haqqımızda</Link>
+                                </button>
+                                <button className="navbtn">
+                                    <Link to={'/xidmətlərimiz'} className="navlink" >Xidmətlər</Link>
+                                </button>
+                                <button className="navbtn">
+                                    <Link to={"/"} className="navlink" >Bloq</Link>
+                                </button>
+                                <button className="navbtn">
+                                    <Link to={"/"} className="navlink" >Əlaqə</Link>
+                                </button>
                             </div>
-                            <button className="navbtn">
-                                <i class="fa-regular fa-heart navicon"></i>
-                            </button>
-                            <button className="navbtn" >
-                                <i class="fa-solid fa-cart-shopping navicon"></i>
-                            </button>
+                            <div className="navicons">
+                                <div>
+                                    <button className="navbtn" onClick={handleLoginCard}>
+                                        <i class="fa-regular fa-user  navicon"></i>
+                                    </button>
+                                    {showLoginCard && <LoginCard/>}
+                                </div>
+                                <button className="navbtn">
+                                    <i class="fa-regular fa-heart navicon"></i>
+                                </button>
+                                <button className="navbtn" >
+                                    <i class="fa-solid fa-cart-shopping navicon"></i>
+                                </button>
+                            </div>
                         </div>
                     </nav>
                 </div>
