@@ -2135,7 +2135,7 @@ body::-webkit-scrollbar{
             width: 60rem;
         }
 }
-@media (max-width: 390px) {
+@media (max-width: 600px) {
     /* Main Page */
         /* Nav Bar  */
         .navlink:link,
