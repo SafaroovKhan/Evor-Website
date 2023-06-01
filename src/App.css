@@ -2530,6 +2530,503 @@ body::-webkit-scrollbar{
             width: 38rem;
         }
         
+    /* OUr Services Page */
+        .ourservices-header-text{
+            font-size: 1.2rem;
+        }
+        .ourservices-header-title{
+            font-size: 3rem;
+        }
+        .ourservices-header-container{
+            width: 34rem;
+            height: 25rem;
+            gap: 1rem;
+        }
+        .ourservices-header{
+            height: 30rem;
+        }
+        .ourservices-header::after{
+            content: "";
+            border-left: 1px solid #47372d;
+            width: 1rem;
+            height: 20rem;
+            position: absolute;
+            top: -1.5rem;
+            left: 1rem;
+        }
+        .ourservices-header::before{
+            content: "";
+            border-left: 1px solid #47372d;
+            width: 1rem;
+            height: 20rem;
+            position: absolute;
+            top: 10rem;
+            right: 0rem;
+        }
 
-
+        .row-txt{
+            font-size: 1rem;
+        }
+        .row-header{
+            font-size: 1.6rem;
+            margin: 1rem;
+        }
+        .ourservices{
+            padding-bottom: 5rem;
+        }
+    /* login Card */
+        .logincard{
+            background-color: #fff;
+            width: 10rem;
+            height: 8rem;
+            border: 1px solid #47372d;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        
+            position: absolute;
+            top: 9rem;
+            right: 7rem;
+            z-index: 99999999;
+        }
+        .logincard-container{
+            padding: 2rem;
+        }
+        .login-links{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .login-link:link,
+        .login-link:visited{
+            font-size: 1.4rem;
+            font-family: 'Wix Madefor Text', sans-serif;
+            color: #47372d;
+            text-decoration: none;
+        }
+        .signup-link:link,
+        .signup-link:visited{
+            background-color: #dfd3c3;
+            border: 1px solid #47372d;
+            padding: 0.5rem;
+            border-radius: 15px;
+        }
+    /* Login Page */
+    .loginpage{
+        width: 100%;
+        height: 56vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .loginimg{
+        width: 100%;
+        height: 70vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: none;
+    }
+    .login-navbar{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+    .login-navbar-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 8.5fr 3.5fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: end;
+    }
+    .login-nav-btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .login-nav-btn{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    
+        font-size: 1.2rem;
+        font-family: 'Wix Madefor Text', sans-serif;
+        color: #47372d;
+        font-weight: 500;
+    }
+    .login-nav-icons{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-right: 0rem;
+    }
+    .login-nav-icon{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    
+        font-size: 1.6rem;
+        font-family: 'Wix Madefor Text', sans-serif;
+        color: #47372d;
+        font-weight: 500;
+    }
+    
+    
+    .loginpage-form{
+        width: 25rem;
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 5rem;
+    }
+    .loginpage-header{
+        font-size: 4rem;
+        font-family: 'Wix Madefor Text', sans-serif;
+        color: #47372d;
+        font-weight: lighter;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .loginpage-form form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .loginpage-form-box{
+        background-color: #dfd3c3;
+        width: 25em;
+        height: 3rem;
+        border: 1px solid #47372d;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 11fr;
+        justify-items: start;
+        align-items: center;
+    }
+    .formicon{
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+    .loginpage-input{
+        background-color: transparent;
+        text-align: center;
+        border: none;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .loginpage-input:focus{
+        outline: none;
+    }
+    .form-check{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+    .formcheck-txt{
+        font-size: 1rem;
+        font-family:  'Wix Madefor Text', sans-serif;
+        color: #47372d;
+    
+    }
+    .forgot-btn{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    
+        font-size: 1rem;
+        color: #47372d;
+        font-family:  'Wix Madefor Text', sans-serif;
+    }
+    .loginbtns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .loginbtn{
+        margin: 0;
+        background-color: #47372d;
+        color: #dfd3c3;
+        width: 25rem;
+        font-size: 2rem;
+        font-family: 'Wix Madefor Text', sans-serif;
+    }
+    .signbtn{
+        font-size: 2rem;
+        font-family: 'Wix Madefor Text', sans-serif;
+        color: #47372d;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .google-logo{
+        width: 2rem;
+        height: 2rem;
+    }
+    .googlebtn{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 1.6rem;
+        font-family:  'Wix Madefor Text', sans-serif;
+        color: #47372d;
+        margin-top: 1rem;
+    }
+    /* SignUp Page */
+    .signpage-form{
+        width: 36rem;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin: 0;
+    }
+    .signpage-header-box{
+        width: 36rem;
+        text-align: center;
+    }
+    .signuppage-header{
+        font-size: 3rem;
+        font-family: 'Wix Madefor Text', sans-serif;
+        color: #47372d;
+        font-weight: lighter;
+        text-align: center;
+        margin: 0;
+        text-align: center;
+    }
+    .signup-form-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .signup-form-box label{
+        font-size: 1.4rem;
+        font-family:  'Wix Madefor Text', sans-serif;
+        color: #47372d;
+    }
+    .signpage-input{
+        width: 24rem;
+        height: 2.5rem;
+        border-radius: 10px;
+        border: 1px solid #47372d;
+        padding: 0 2rem 0 2rem;
+    }
+    .loginbtn-signuppage{
+        background-color: #47372d;
+        color: #dfd3c3;
+        width: 28rem;
+        font-size: 2rem;
+        font-family: 'Wix Madefor Text', sans-serif;
+    }
+    .signup-googlebtn{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 1.6rem;
+        font-family:  'Wix Madefor Text', sans-serif;
+        color: #47372d;
+        margin-top: 1rem;
+    }
+    /* Decors Page */
+    .decornav{
+        background-color: transparent;
+        width: 96%;
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .decornav-container{
+        width: 100%;
+        height: 10rem;
+        display: grid;
+        grid-template-columns: 3fr 6fr 3fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .decornav-brand{
+        color: #47372d;
+        font-size: 4rem;
+        font-family: 'Great Vibes', cursive;
+        font-weight: 400;
+        margin: 0;
+    }
+    .decornav-btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .decornav-btn{
+        background-color: #fff;
+        padding: 1rem 2rem;
+        border: 1px solid #47372d;
+        border-radius: 10px;
+        cursor: pointer;
+    
+        font-size: 1.4rem;
+        font-weight: lighter;
+        color: #47372d;
+        font-family: 'Wix Madefor Text', sans-serif;
+        display: none;
+    }
+    .decornav-icon{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    
+        font-size: 1rem;
+        color: #47372d;
+    
+    }
+    .decornav::after{
+        content: '';
+        color: transparent;
+        border-bottom: 2px solid #47372d;
+        width: 36rem;
+        height: 0.5rem;
+        position: absolute;
+        bottom: 0;
+        left: 0rem;
+    }
+    .decorfilternav{
+        background-color: transparent;
+        width: 100%;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .decorfilternav-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .decorfilter-form{
+        position: relative;
+    }
+    .searchbar{
+        width: 24rem;
+        height: 4rem;
+        border: 1px solid #47372d;
+        border-radius: 15px;
+        padding: 0 1rem 0 1rem;
+    
+        color: #47372d;
+        font-size: 1.8rem;
+        
+    }
+    .searchbar-btn{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    
+        font-size: 2.5rem;
+        color: #47372d;
+    
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+    }
+    .decorfilternav-filters{
+        border-top: 1px solid #47372d;
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .decorfilternav-btn{
+        width: 6rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        
+        font-size: 1rem;
+        font-family: 'Wix Madefor Text', sans-serif;
+        color: #47372d;
+        font-weight: 400;
+    
+    
+    }
+    .border-btn1{
+        border-left: 1px solid #47372d  ;
+        border-right: 1px solid #47372d  ;
+    }
+    .border-btn2{
+        border-left: 1px solid #47372d  ;
+        border-right: 1px solid #47372d  ;
+    }
+    .border-btn3{
+        border-right: 1px solid #47372d  ;
+    }
+    .decorfilternav::after{
+        content: '';
+        color: transparent;
+        border-top: 1px solid #47372d;
+        width: 37rem;
+        height: 0.5rem;
+        position: absolute;
+        top: 0.5rem;
+        left: 0rem;
+    }
+    .decorwindow-container{
+        width: 30rem;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        column-gap: 1rem;
+        row-gap: 2rem;
+    }
+    .decorsidebar{
+        width: 5rem;
+        height: 105rem;
+        background-color: #fff;
+        border: 1px solid #47372d;
+        border-radius: 10px;
+        position: absolute;
+        top: 24rem;
+        right: 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
 }

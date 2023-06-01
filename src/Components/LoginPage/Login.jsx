@@ -41,13 +41,13 @@ export default function LoginPage () {
                 </div>
                 <div className="loginpage-form">
                     <h1 className="loginpage-header">Daxil Ol</h1>
-                    <form action="" netlify>
+                    <form action="" >
                         <div className="loginpage-form-box">
                             <i className="fa-solid fa-user formicon"></i>
                             <input type="text" placeholder="İstifadəçi Adı" className="loginpage-input"/>
                         </div>
                     </form>
-                    <form action="" netlify>
+                    <form action="" >
                         <div className="loginpage-form-box">
                             <i className="fa-solid fa-lock formicon"></i>
                             <input type="text" placeholder="Şifrə" className="loginpage-input"/>

@@ -42,25 +42,25 @@ export default function SignUp () {
                     <div className="signpage-header-box">
                         <h1 className="signuppage-header">Üzv Ol</h1>
                     </div>
-                    <form action="" netlify>
+                    <form action="" >
                         <div className="signup-form-box" >
                             <label htmlFor="">Ad, Soyad</label>
                             <input type="text"  className="signpage-input"/>
                         </div>
                     </form>
-                    <form action="" netlify>
+                    <form action="" >
                         <div className="signup-form-box">
                             <label htmlFor="">E-Poçt</label>
                             <input type="text"  className="signpage-input"/>
                         </div>
                     </form>
-                    <form action="" netlify>
+                    <form action="" >
                         <div className="signup-form-box">
                             <label htmlFor="">Telefon nömrəsi</label>
                             <input type="text"  className="signpage-input"/>
                         </div>
                     </form>
-                    <form action="" netlify>
+                    <form action="" >
                         <div className="signup-form-box">
                             <label htmlFor="">Şifrə</label>
                             <input type="text" placeholder="6+ simvol" className="signpage-input"/>
