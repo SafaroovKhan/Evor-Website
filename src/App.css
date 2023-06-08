@@ -2840,6 +2840,7 @@ body::-webkit-scrollbar{
     .loginbtn-signuppage{
         background-color: #47372d;
         color: #dfd3c3;
+        cursor: pointer;
         width: 28rem;
         font-size: 2rem;
         font-family: 'Wix Madefor Text', sans-serif;

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
 import Footer from "../MainPage/Footer"
 import googleimg from "./images/googlelogo.png"
 import loginimg from "./images/loginbackground.png"
@@ -11,6 +12,8 @@ export default function SignUp () {
     const handleLoginCard = () => {
         setShowLoginCard(!showLoginCard);
     }
+
+    const {register, handleSubmit} = useForm();
 
     return (
         <>
@@ -25,11 +28,11 @@ export default function SignUp () {
                         </div>
                         <div className="login-nav-icons">
                             <div>
-                                <button className="login-nav-icon" onClick={handleLoginCard}><i class="fa-regular fa-user  "></i></button>
+                                <button className="login-nav-icon" onClick={handleLoginCard}><i className="fa-regular fa-user  "></i></button>
                                 {showLoginCard && <LoginCard/>}
                             </div>
-                            <button className="login-nav-icon"><i class="fa-regular fa-heart "></i></button>
-                            <button className="login-nav-icon"><i class="fa-solid fa-cart-shopping "></i></button>
+                            <button className="login-nav-icon"><i className="fa-regular fa-heart "></i></button>
+                            <button className="login-nav-icon"><i className="fa-solid fa-cart-shopping "></i></button>
                         </div>
                     </div>
                 </div>
@@ -42,44 +45,27 @@ export default function SignUp () {
                     <div className="signpage-header-box">
                         <h1 className="signuppage-header">Üzv Ol</h1>
                     </div>
-                    <form action="" >
-                        <div className="signup-form-box" >
+                    <form  className="signup-form-box"  onSubmit={handleSubmit((data) => {
+                        console.log(data);
+                    })}>
                             <label htmlFor="">Ad, Soyad</label>
-                            <input type="text"  className="signpage-input"/>
-                        </div>
-                    </form>
-                    <form action="" >
-                        <div className="signup-form-box">
+                            <input {...register( "full name", {required: true})} type="text"  className="signpage-input"/>
                             <label htmlFor="">E-Poçt</label>
-                            <input type="text"  className="signpage-input"/>
-                        </div>
-                    </form>
-                    <form action="" >
-                        <div className="signup-form-box">
+                            <input {...register( "Email", {required: true})} type="text"  className="signpage-input"/>
                             <label htmlFor="">Telefon nömrəsi</label>
-                            <input type="text"  className="signpage-input"/>
-                        </div>
-                    </form>
-                    <form action="" >
-                        <div className="signup-form-box">
+                            <input {...register( "phone number", {required: true})} type="text"  className="signpage-input"/>
                             <label htmlFor="">Şifrə</label>
-                            <input type="text" placeholder="6+ simvol" className="signpage-input"/>
-                        </div>
-                    </form>
-                    <div className="form-check">
-                        <div className="formcheck-remember">
-                            <form action="">
-                                <input type="checkbox" />
+                            <input {...register( "password", {required: true, minLength: 8})} type="text" placeholder="8+ simvol" className="signpage-input"/>
+                            <div className="formcheck-remember">
+                                <input {...register( "checkbox", {required: true})} type="checkbox" />
                                 <label htmlFor="" className="formcheck-txt">Bütün Üzvlük şərtləri ilə razılaşıram.</label>
-                            </form>
-                        </div>
-                    </div>
-                    <div className="loginbtns">
-                        <button className="loginbtn-signuppage" type="submit">Üzv Ol</button>
-                        <button className="signbtn">Daxil Ol</button>
-                    </div>
+                            </div>
+                            <div className="loginbtns">
+                                <button className="loginbtn-signuppage" onClick={handleSubmit} >Üzv Ol</button>
+                                <button className="signbtn">Daxil Ol</button>
+                            </div>
+                    </form>
                     <div className="googlebtn-box">
-
                         <button className="signup-googlebtn">
                             <img src={googleimg} alt="google logo" className="google-logo" />
                             Google ilə üzv ol
