@@ -13,7 +13,8 @@ export default function SignUp () {
         setShowLoginCard(!showLoginCard);
     }
 
-    const {register, handleSubmit} = useForm();
+    const {register, handleSubmit, formState: {errors}} = useForm();
+    console.log(errors);
 
     return (
         <>
@@ -49,16 +50,16 @@ export default function SignUp () {
                         console.log(data);
                     })}>
                             <label htmlFor="">Ad, Soyad</label>
-                            <input {...register( "full name", {required: true})} type="text"  className="signpage-input"/>
+                            <input {...register( "full name", {required: "fill this gap"})} type="text"  className="signpage-input"/>
                             <label htmlFor="">E-Poçt</label>
-                            <input {...register( "Email", {required: true})} type="text"  className="signpage-input"/>
+                            <input {...register( "Email", {required: "fill this gap"})} type="text"  className="signpage-input"/>
                             <label htmlFor="">Telefon nömrəsi</label>
-                            <input {...register( "phone number", {required: true})} type="text"  className="signpage-input"/>
+                            <input {...register( "phone number", {required: "fill this gap"})} type="text"  className="signpage-input"/>
                             <label htmlFor="">Şifrə</label>
-                            <input {...register( "password", {required: true, minLength: 8})} type="text" placeholder="8+ simvol" className="signpage-input"/>
+                            <input {...register( "password", {required: "fill this gap", minLength: {value: 8, message: "Min length is 8"}})}  type="text" placeholder="8+ simvol" className="signpage-input"/>
                             <div className="formcheck-remember">
-                                <input {...register( "checkbox", {required: true})} type="checkbox" />
-                                <label htmlFor="" className="formcheck-txt">Bütün Üzvlük şərtləri ilə razılaşıram.</label>
+                                <input {...register( "checkbox", {required: "check this box"})} type="checkbox"  />
+                                <label  className="formcheck-txt">Bütün Üzvlük şərtləri ilə razılaşıram.</label>
                             </div>
                             <div className="loginbtns">
                                 <button className="loginbtn-signuppage" onClick={handleSubmit} >Üzv Ol</button>
