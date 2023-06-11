@@ -13,8 +13,7 @@ export default function SignUp () {
         setShowLoginCard(!showLoginCard);
     }
 
-    const {register, handleSubmit, formState: {errors}} = useForm();
-    console.log(errors);
+    const {register, handleSubmit} = useForm(); 
 
     return (
         <>
