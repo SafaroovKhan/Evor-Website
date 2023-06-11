@@ -49,14 +49,14 @@ export default function SignUp () {
                     <form  className="signup-form-box"  onSubmit={handleSubmit((data) => {
                         console.log(data);
                     })}>
-                            <label htmlFor="">Ad, Soyad</label>
+                            <label htmlFor="name">Ad, Soyad</label>
                             <input {...register( "full name", {required: "fill this gap"})} type="text"  className="signpage-input"/>
-                            <label htmlFor="">E-Poçt</label>
+                            <label htmlFor="mail">E-Poçt</label>
                             <input {...register( "Email", {required: "fill this gap"})} type="text"  className="signpage-input"/>
-                            <label htmlFor="">Telefon nömrəsi</label>
+                            <label htmlFor="phone">Telefon nömrəsi</label>
                             <input {...register( "phone number", {required: "fill this gap"})} type="text"  className="signpage-input"/>
-                            <label htmlFor="">Şifrə</label>
-                            <input {...register( "password", {required: "fill this gap", minLength: {value: 8, message: "Min length is 8"}})}  type="text" placeholder="8+ simvol" className="signpage-input"/>
+                            <label htmlFor="password">Şifrə</label>
+                            <input {...register( "password", {required: "fill this gap", minLength: {value: 8, message: "Min length is 8"}})} id="password"  type="password" placeholder="8+ simbol" className="signpage-input"/>
                             <div className="formcheck-remember">
                                 <input {...register( "checkbox", {required: "check this box"})} type="checkbox"  />
                                 <label  className="formcheck-txt">Bütün Üzvlük şərtləri ilə razılaşıram.</label>
