@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import Footer from "../MainPage/Footer"
 import googleimg from "./images/googlelogo.png"
 import loginimg from "./images/loginbackground.png"
-import LoginCard from "../LoginCard"
+import LoginCard from "../Elements/LoginCard"
 export default function SignUp () {
 
     const [showLoginCard, setShowLoginCard] = useState(false); 

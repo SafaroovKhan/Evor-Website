@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import LoginCard from "../LoginCard";
+import LoginCard from "../Elements/LoginCard";
 import Footer from "../MainPage/Footer"
 import googleimg from "./images/googlelogo.png"
 import loginimg from "./images/loginbackground.png"

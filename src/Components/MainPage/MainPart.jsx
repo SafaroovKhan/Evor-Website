@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import img03 from "./assets/beads.jpg"
 import img04 from "./assets/candle.jpg"
@@ -11,6 +11,8 @@ import img10 from "./assets/Evor-detail-removebg-preview.png"
 function MainPart() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [transition, setTransition] = useState(false); // Add transition state and setter
+  const [showButtons, setShowButtons] = useState(false);
+
   const images = [
     img03,
     img04,
@@ -21,47 +23,80 @@ function MainPart() {
   ];
 
   const handleNextSlide = () => {
-    setTransition(true);
-    setTimeout(() => {
-      setCurrentSlide((currentSlide + 1) % images.length);
-      setTransition(false);
-    }, 300);
+    setTransition(true); // Enable transition effect
+    setCurrentSlide((currentSlide + 1) % images.length);
   };
 
   const handlePreviousSlide = () => {
-    setTransition(true);
-    setTimeout(() => {
-      setCurrentSlide((currentSlide - 1 + images.length) % images.length);
-      setTransition(false);
-    }, 300); 
+    setTransition(true); // Enable transition effect
+    setCurrentSlide((currentSlide - 1 + images.length) % images.length);
   };
 
   const getPreviousIndex = (currentIndex) => {
     return (currentIndex - 1 + images.length) % images.length;
   };
-
+  
   const getNextIndex = (currentIndex) => {
     return (currentIndex + 1) % images.length;
   };
 
+  useEffect(() => {
+    const handleLineScroll = () => {
+        const scrollLineY = window.scrollY;
+        if (scrollLineY > 300) {
+          document.querySelector(".mainpart-lines").classList.add("line-animation")
+        } else {
+            document.querySelector(".mainpart-lines").classList.remove("line-animation")
+        }
+      };
+  
+      window.addEventListener("scroll", handleLineScroll);
+  
+      // Clean up the event listener when the component unmounts
+      return () => {
+        window.removeEventListener("scroll", handleLineScroll);
+      };
+  }, [])
+
+  useEffect(() => {
+    const handleLineScroll = () => {
+      const scrollLineY = window.scrollY;
+      if (scrollLineY > 300) {
+        setShowButtons(true);
+      } else {
+        setShowButtons(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleLineScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleLineScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className="mainpart-section">
+        <div className="mainpart-lines">
+          <div className="mainpart-line1"></div>
+          <div className="mainpart-line2"></div>
+        </div>
         <div className="mainpart-container">
           <div className="mainpart-top">
-            <div className="mainpart-btn-box">
-                <button className="mainpart-btn" >
+            <div className="mainpart-btn-box" >
+                <button className={`mainpart-btn btn-left ${showButtons ? 'animate-btn-left' : ''}`} >
                   <div className='btn-div'>
-                      <Link to={'/decorlar'} className='mainpart-btn-link' >DEKOR SEÇ</Link> 
+                      <Link to={'/decorlar'} className='mainpart-btn-link' >Dekorlar</Link> 
                     <img src={img10} className='mainbtn-img1' />
                   </div>
                 </button>
             </div>
-            <img src={img08} alt="evor logo" className='mainimg' />
-            <div className="mainpart-btn-box">
-              <button className="mainpart-btn">
+            <div className="mainpart-btn-box" >
+              <button className={`mainpart-btn btn-right ${showButtons ? 'animate-btn-right' : ''}`}>
                 <div className="btn-div">
-                  <Link to={"/özündizaynet"} className='mainpart-btn-link'> ÖZÜN DİZAYN ET </Link> 
+                  <Link to={"/özündizaynet"} className='mainpart-btn-link'> Ləvazimatlar </Link> 
                   <img src={img10} className='mainbtn-img2' />
                 </div>
               </button>

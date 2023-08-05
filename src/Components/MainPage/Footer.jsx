@@ -1,7 +1,34 @@
+import { useEffect } from "react";
+
+
+
 function Footer () {
+
+    useEffect(() => {
+        const handleLineScroll = () => {
+            const scrollFooterLineY = window.scrollY;
+            if (scrollFooterLineY > 900) {
+                document.querySelector(".footer-lines").classList.add("footer-line-animation")
+            } else {
+                document.querySelector(".footer-lines").classList.remove("footer-line-animation")
+            }
+          };
+      
+          window.addEventListener("scroll", handleLineScroll);
+      
+          // Clean up the event listener when the component unmounts
+          return () => {
+            window.removeEventListener("scroll", handleLineScroll);
+          };
+      }, [])
+
     return (
         <>
             <div className="footer-section">
+                <div className="footer-lines">
+                    <div className="footer-line1"></div>
+                    <div className="footer-line2"></div>
+                </div>
                 <div className="footer-container">
                     <div className="footer-contact">
                         <div className="footer-contact-container">
@@ -18,8 +45,8 @@ function Footer () {
                                     info@evor.az
                                 </a>
                             </button>
-                            <a href="" className="contact-social"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="" className="contact-social"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="" className="contact-social"><i class="fa-brands fa-instagram"></i> Evor.az</a>
+                            <a href="" className="contact-social"><i class="fa-brands fa-facebook"></i> Evor.az</a>
                         </div>
                     </div>
                     <div className="footer-pages">

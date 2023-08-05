@@ -1,16 +1,12 @@
+import Searchbar from "../Elements/Searchbar"
+
+
 export default function DecorFilterNav () {
     return (
         <>
             <div className="decorfilternav">
                 <div className="decorfilternav-container">
-                    <div className="decorfilternav-search">
-                        <form action="" className="decorfilter-form">
-                            <input type="text" className="searchbar" />
-                            <button className="searchbar-btn">
-                                <i className="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </form>
-                    </div>
+                    <Searchbar/>
                     <div className="decorfilternav-filters">
                         <button className="decorfilternav-btn">Toy</button>
                         <button className="decorfilternav-btn border-btn1">Doğum Günü</button>

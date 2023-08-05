@@ -1,3 +1,9 @@
+/* Colors
+ Nav Background : #DFD3C3
+
+*/
+
+
 html{
     font-size: 62.5%;
 }
@@ -15,20 +21,28 @@ body::-webkit-scrollbar{
 /* Navbar */
 .navbar-section{
     background-color: transparent;
+    border-right: 1px solid #b59a8a;
+    border-left: 1px solid #b59a8a;
+    border-bottom: 1px solid #b59a8a;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     width: 100%;
-    height: 15rem;
+    height: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
+    position: fixed;
+    z-index: 1000000;
+    transition: background-color 0.3s ease;
 }
 .navbar-container{
     width: 100%;
-    height: 15rem;
+    height: 8rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-items: center;
 }
 .navbar-header{
@@ -38,19 +52,20 @@ body::-webkit-scrollbar{
     justify-content: flex-end;
 }
 .navbar-txt{
-    font-family: 'Wix Madefor Text', sans-serif;
+    font-family: 'Tinos', sans-serif;
+    color: #b59a8a;
     font-weight: 400;
     font-size: 1.4rem;
     margin: 0;
     padding: 0rem 1rem;
-    border: 1px solid #47372d;
+    border: 1px solid #b59a8a;
     border-radius: 5px;
 }
 .navbar-navigation-bar{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 .navbar{
     display: flex;
@@ -58,18 +73,52 @@ body::-webkit-scrollbar{
     justify-content: center;
     gap: 1rem;
 }
+.animate-navbar {
+    animation: slideInRight 1s;
+  }
+  
+  /* Navlinks Animation */
+  .animate-navlinks {
+    animation: slideInTop 4s;
+  }
+  /* Keyframes for Navbar Animation */
+@keyframes slideInRight {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Keyframes for Navlinks Animation */
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 .navimg{
     width: 11rem;
     height: 11rem;
 }
 .navlinks{
-    padding: 0rem 20rem 1rem 20rem;
+    padding: 0rem 5rem 1rem 5rem;
     margin-left: 1rem;
-    border-bottom: 1px solid #47372d;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
+}
+.navlink-right-brdr{
+    border-right: 1px solid #b59a8a;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .navbtn{
     background-color: transparent;
@@ -80,7 +129,7 @@ body::-webkit-scrollbar{
 }
 .navlink:link,
 .navlink:visited{
-    font-family: 'Wix Madefor Text', sans-serif;
+    font-family: 'Tinos', sans-serif;
     font-size: 2rem;
     font-weight: 500;
     color: #47372d;
@@ -93,8 +142,24 @@ body::-webkit-scrollbar{
     gap: 1rem;
 }
 .navicon{
-    font-size: 3rem;
+    font-size: 2rem;
     color: #47372d;
+}
+.lang-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.lang-btn{
+    background-color: transparent;
+    border: 1px solid #b59a8a;
+    border-radius: 5px;
+    color: #47372d;
+    font-family: 'Tinos', sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
 }
 /* NavCard Component */
 .navcard{
@@ -122,7 +187,7 @@ body::-webkit-scrollbar{
 }
 .navcard-header{
     font-size: 2.4rem;
-    font-family: 'Wix Madefor Text', sans-serif;
+    font-family: 'Tinos', sans-serif;
     font-weight: 500;
     color: #47372d;
     margin: 0;
@@ -137,7 +202,7 @@ body::-webkit-scrollbar{
 .navcard-link:link,
 .navcard-link:visited{
     font-size: 1.6rem;
-    font-family: 'Wix Madefor Text', sans-serif;
+    font-family: 'Tinos', sans-serif;
     color: #47372d;
 }
 
@@ -153,8 +218,8 @@ body::-webkit-scrollbar{
     justify-content: center;
 
     position: absolute;
-    top: 10rem;
-    right: 15rem;
+    top: 6rem;
+    right: 10rem;
     z-index: 99999999;
 }
 .logincard-container{
@@ -170,7 +235,7 @@ body::-webkit-scrollbar{
 .login-link:link,
 .login-link:visited{
     font-size: 2rem;
-    font-family: 'Wix Madefor Text', sans-serif;
+    font-family: 'Tinos', sans-serif;
     color: #47372d;
     text-decoration: none;
 }
@@ -181,22 +246,83 @@ body::-webkit-scrollbar{
     padding: 1rem;
     border-radius: 15px;
 }
+/* Decor Card  */
+.decor-card{
+    width: 33rem;
+    height: 15rem;
+    border: 1px solid #47372d;
+    border-radius: 10px;
+    background-color: #dfd3c3;
+    position: absolute;
+    top: 6rem;
+    right: 42rem;
+}
+/* Aboutus Card */
+.aboutus-card{
+    width: 33rem;
+    height: 15rem;
+    border: 1px solid #47372d;
+    border-radius: 10px;
+    background-color: #dfd3c3;
+    position: absolute;
+    top: 6rem;
+    right: 60rem;
+}
+
+/* Tools Card */
+.tools-card{
+    width: 33rem;
+    height: 15rem;
+    border: 1px solid #47372d;
+    border-radius: 10px;
+    background-color: #dfd3c3;
+    position: absolute;
+    top: 6rem;
+    right: 27rem;
+}
+
+/* Serivces Card */
+.services-card{
+    width: 33rem;
+    height: 15rem;
+    border: 1px solid #47372d;
+    border-radius: 10px;
+    background-color: #dfd3c3;
+    position: absolute;
+    top: 6rem;
+    right: 10rem;
+}
+
+/* Contact Card */
+.contact-card{
+    width: 33rem;
+    height: 15rem;
+    border: 1px solid #47372d;
+    border-radius: 10px;
+    background-color: #dfd3c3;
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+}
+
 /* Header Section */
 .header-section{
     width: 100%;
     height: 100vh;
     position: relative;
 }
+.header-searcbar{
+    padding-top: 9rem;
+    padding-left: 40rem;
+}
 .header-img{
-    width: 100%;
+    width: 101%;
     height: 100vh;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: -1;
 }
-
-
 /* Main Part Section */
 
 .mainpart-section{
@@ -209,28 +335,39 @@ body::-webkit-scrollbar{
     justify-content: center;
     position: relative;
 }
-.mainpart-section::after{
-    content: "test";
-    color: transparent;
-    border-bottom: 2px solid #47372d;
+@keyframes slideToRight {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  .mainpart-lines{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -5rem;
+    left: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    opacity: 0;
+  }
+  .line-animation{
+    animation: slideToRight 1s forwards;
+    opacity: 1;
+  }
+  .mainpart-line1{
     width: 100rem;
-    position: absolute;
-    top: -6rem;
-    left: 0rem;
-    z-index: 99999;
-
-}
-.mainpart-section::before{
-    content: "test";
-    color: transparent;
-    border-bottom: 2px solid #47372d;
+    border-bottom: 1px solid #47372d;
+  }
+  .mainpart-line2{
     width: 110rem;
-    position: absolute;
-    top: -5.5rem;
-    left: 0rem;
-    z-index: 99999;
-
-}
+    border-bottom: 1px solid #47372d;
+  }
 .mainpart-container{
     width: 100%;
     display: flex;
@@ -243,7 +380,7 @@ body::-webkit-scrollbar{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 9rem;
+    gap: 20rem;
 }
 .mainpart-btn-box{
     width: 32rem;
@@ -256,17 +393,44 @@ body::-webkit-scrollbar{
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-family: 'Wix Madefor Text', sans-serif;
+    font-family: 'Tinos', sans-serif;
     font-size: 2.8rem;
     font-weight: lighter;
     color: #47372d;
-  
-
-    transition: all 0.15s;
+    transition: all 0.3s ease;
+    opacity: 0;
 }
+@keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+.animate-btn-left {
+    animation: slideFromLeft 1s forwards;
+    opacity: 1;
+  }
+.animate-btn-right {
+    animation: slideFromLeft 1s forwards;
+    opacity: 1;
+  }
 .mainpart-btn-link{
-    font-family: 'Wix Madefor Text', sans-serif;
-    font-size: 2.8rem;
+    font-family: 'Tinos', sans-serif;
+    font-size: 4rem;
     font-weight: lighter;
     color: #47372d;
     text-decoration: none;
@@ -278,16 +442,16 @@ body::-webkit-scrollbar{
     width: 30rem;
     height: 15rem;
     position: absolute;
-    top: -5.5rem;
-    left: -6rem;
+    top: -5rem;
+    left: -7.8rem;
     z-index: -1;
 }
 .mainbtn-img2{
     width: 30rem;
     height: 15rem;
     position: absolute;
-    top: -5.5rem;
-    right: -3.5rem;
+    top: -5rem;
+    right: -4rem;
     z-index: -1;
 }
 
@@ -310,13 +474,16 @@ body::-webkit-scrollbar{
     align-items: center;
     justify-content: center;
     gap: 5rem;
+    overflow: hidden;
 }
 .imgslider-box{
     background-color: transparent;
-    width: 30rem;
-    height: 34rem;
+    width: 20rem;
+    height: 24rem;
     border-radius: 15px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: translateX(0); /* Add this to set initial position */
+    transition: transform 0.3s ease-in-out;
 }
 .imgslider-box-big{
     width: 34rem;
@@ -326,11 +493,10 @@ body::-webkit-scrollbar{
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .transitioning {
-    transform: scale(0.8); /* Adjust the desired animation effect */
-    opacity: 0.5; /* Adjust the desired animation effect */
+    transform: translateX(0); 
   }
 .next-button{
     background-color: transparent;
@@ -429,32 +595,6 @@ body::-webkit-scrollbar{
     align-items: center;
     justify-content: center;
     gap: 3rem;
-}
-.decorfilter-form{
-    position: relative;
-}
-.searchbar{
-    width: 33rem;
-    height: 4rem;
-    border: 1px solid #47372d;
-    border-radius: 15px;
-    padding: 0 1rem 0 1rem;
-
-    color: #47372d;
-    font-size: 1.8rem;
-    
-}
-.searchbar-btn{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
-    font-size: 2.5rem;
-    color: #47372d;
-
-    position: absolute;
-    top: 0.5rem;
-    right: 1rem;
 }
 .decorfilternav-filters{
     border-top: 1px solid #47372d;
@@ -1417,27 +1557,38 @@ body::-webkit-scrollbar{
     align-items: center;
     justify-content: center;
 }
-.footer-section::after{
-    content: "test";
-    color: transparent;
-    border-bottom: 2px solid #47372d;
-    width: 100rem;
+@keyframes slideFromLeftToRight {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+.footer-lines{
+    width: 100%;
+    height: auto;
     position: absolute;
-    top: -2rem;
+    top: -1em;
     left: 0rem;
-    z-index: 99999;
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    opacity: 0;
 }
-.footer-section::before{
-    content: "test";
-    color: transparent;
-    border-bottom: 2px solid #47372d;
+.footer-line-animation{
+    animation: slideFromLeftToRight 1s forwards;
+    opacity: 1;
+}
+.footer-line1{
+    width: 100rem;
+    border-bottom: 1px solid #47372d;
+}
+.footer-line2{
     width: 110rem;
-    position: absolute;
-    top: -2.5rem;
-    left: 0rem;
-    z-index: 99999;
-
+    border-bottom: 1px solid #47372d;
 }
 .footer-container{
     width: 110rem;
@@ -1462,8 +1613,10 @@ body::-webkit-scrollbar{
 }
 .contact-header{
     color: #dfd3c3;
-    font-family: 'Wix Madefor Text', sans-serif;
+    font-family: "Tinos", sans-serif;
+    border-bottom: 1px solid #b59a8a;
     font-size: 2.4rem;
+    width: 25rem;
     font-weight: 500;
 }
 .contact-btn{
@@ -1472,18 +1625,20 @@ body::-webkit-scrollbar{
     cursor: pointer;
 
     font-size: 2rem;
+    font-family: "Tinos", sans-serif;
     color: #dfd3c3;
 }
 .contact-link:link,
 .contact-link:visited{
     text-decoration: none;
     color: #dfd3c3;
-    font-family: 'Wix Madefor Text', sans-serif;    
+    font-family: "Tinos", sans-serif;   
     margin-left: 1rem;
 }
 .contact-social:link,
 .contact-social:visited{
     font-size: 2.4rem;
+    text-decoration: none;
     color: #dfd3c3;
     margin-left: 0.56rem;
 }
@@ -1504,7 +1659,9 @@ body::-webkit-scrollbar{
 .pages-header{
     font-size: 2.4rem;
     color: #dfd3c3;
-    font-family: 'Wix Madefor Text', sans-serif; 
+    border-bottom: 1px solid #b59a8a;
+    font-family: "Tinos", sans-serif;
+    width: 25rem;
     font-weight: 500;
 }
 .pages-links{
@@ -1516,9 +1673,9 @@ body::-webkit-scrollbar{
 }
 .page-link:link,
 .page-link:visited{
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #dfd3c3;
-    font-family: 'Wix Madefor Text', sans-serif; 
+    font-family: "Tinos", sans-serif;
     text-decoration: none;
     font-weight: 500;
 }
@@ -1538,8 +1695,10 @@ body::-webkit-scrollbar{
 }
 .campains-header{
     font-size: 2.4rem;
+    border-bottom: 1px solid #b59a8a;
     color: #dfd3c3;
-    font-family: 'Wix Madefor Text', sans-serif; 
+    font-family: "Tinos", sans-serif;
+    width: 25rem;
     font-weight: 500;
 }
 
@@ -1554,12 +1713,14 @@ body::-webkit-scrollbar{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 1;
+    gap: 1rem;
 }
 .help-header{
     font-size: 2.4rem;
     color: #dfd3c3;
-    font-family: 'Wix Madefor Text', sans-serif; 
+    border-bottom: 1px solid #b59a8a;
+    width: 25rem ;
+    font-family: "Tinos", sans-serif;
     font-weight: 500;
 }
 .help-links{
@@ -1571,14 +1732,48 @@ body::-webkit-scrollbar{
 }
 .help-link:link,
 .help-link:visited{
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #dfd3c3;
-    font-family: 'Wix Madefor Text', sans-serif; 
+    font-family: "Tinos", sans-serif;
     text-decoration: none;
     font-weight: 500;
 
 }
+/* Seachbar Element */
+.searchbar-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-box{
+    width: 33rem;
+    height: 4rem;
+    position: relative;
+}
+.searchbar{
+    width: 33rem;
+    height: 4rem;
+    border: 1px solid #47372d;
+    border-radius: 15px;
+    padding: 0 1rem 0 1rem;
 
+    color: #47372d;
+    font-size: 1.8rem;
+}
+.searchbar-btn{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+
+    font-size: 2.5rem;
+    color: #47372d;
+
+    position: absolute;
+    top: 0.6rem;
+    right: -1rem;
+}
 
 /* Media Queries */
 @media (max-width: 1277px) {
@@ -1594,7 +1789,7 @@ body::-webkit-scrollbar{
             text-decoration: none;
         }
         .navlinks{
-            padding: 0 15rem 1rem 15rem;
+            padding: 0 5rem 1rem 5rem;
         }
 }
 @media (max-width: 1161px) {

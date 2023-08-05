@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LoginCard from "../LoginCard"
+import LoginCard from "../Elements/LoginCard"
 import img08 from "../MainPage/assets/Evorlogo2.png"
 
 

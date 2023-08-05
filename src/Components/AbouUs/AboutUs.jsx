@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import LoginCard from "../LoginCard";
+import LoginCard from "../Elements/LoginCard";
 import Footer from "../MainPage/Footer"
-import aboutusbackground from "./aboutusimgs/aboutusbackground.png"
+import aboutusbackground from "./aboutusimgs/aboutus.png"
 import aboutuspattern from "./aboutusimgs/aboutuspattern.png"
 import memberimg01 from "./aboutusimgs/uss1croped.png"
 import memberimg02 from "./aboutusimgs/uss2croped.png"
@@ -80,24 +80,6 @@ export default function AboutUs () {
                             </div>
                             <div className="teamimg-box img-reverse-large">
                                 <img src={memberimg02} alt="" className="teamimg teamimg-large" />
-                            </div>
-                        </div>
-                        <div className="teamrow">
-                            <div className="teamimg-box  img-straight">
-                                <img src={memberimg03} alt="" className="teamimg" />
-                            </div>
-                            <div className="teamcontent-box teambox3">
-                                <h1 className="teamcontent-header">Fərqanə Ağayeva</h1>
-                                <article className="teamcontent-txt">İnsan Resursları üzrə Menecer (HR)</article>
-                            </div>
-                        </div>
-                        <div className="teamrow-reverse">
-                            <div className="teamcontent-box teambox4">
-                                <h1 className="teamcontent-header">Elgün Nağılı</h1>
-                                <article className="teamcontent-txt">İctimai Əlaqələr üzrə mütəxəssis (PR)</article>
-                            </div>
-                            <div className="teamimg-box img-reverse">
-                                <img src={memberimg04} alt="" className="teamimg " />
                             </div>
                         </div>
                         <div className="teamrow">
